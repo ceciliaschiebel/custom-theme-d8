@@ -1,0 +1,23 @@
+/**
+ * Place your custom styles here.
+ */
+
+body {
+  background: linear-gradient(to bottom, #bae2ef, #90B8EA)
+}
+.mask-container {
+  position: relative;
+  display: inline-block;
+}
+.mask{
+  position: absolute;
+  background-color: grey;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+.mask:hover{
+  background-color: transparent;
+}

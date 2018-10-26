@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+function custom_preprocess_page_title(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $variables['node'] = $node;
+  $variables['title_prefix'] = 'This page is named: ';
+}
